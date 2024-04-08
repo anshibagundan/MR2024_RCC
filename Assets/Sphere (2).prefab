@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 5904364601701036411}
   - component: {fileID: 3093126306198686732}
   - component: {fileID: 1433361317829485992}
+  - component: {fileID: -615302732773864883}
   m_Layer: 0
   m_Name: Sphere (2)
   m_TagString: Untagged
@@ -66,7 +67,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: f9f5da2b033a34d858bac5eb82d60fe9, type: 2}
+  - {fileID: 2100000, guid: 7bf91de69dfef47228b31aa0553fa29e, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -211,3 +212,20 @@ MonoBehaviour:
   _movementProvider: {fileID: 0}
   _handAligment: 1
   _handGrabPoses: []
+--- !u!114 &-615302732773864883
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 65079990123128015}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 414138baeac8265429ea3c3e625d92e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objectsToRespawn:
+  - {fileID: 2083612167240573303, guid: 270571ad349b5cb49a61aaec8ca4c941, type: 3}
+  - {fileID: 395592773905566554, guid: de6fbb7103dd0664b86a7ac0e1a662d8, type: 3}
+  - {fileID: 65079990123128015}
+  initialPosition: {x: 0, y: 0, z: 0}
