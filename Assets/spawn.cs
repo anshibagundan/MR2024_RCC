@@ -9,7 +9,7 @@ public class Spawn : MonoBehaviour
 
     void Start()
     {
-        initialPosition = transform.position; // ‰ŠúˆÊ’u‚ğ•Û‘¶
+        //initialPosition = transform.position; // ‰ŠúˆÊ’u‚ğ•Û‘¶
     }
 
     void OnCollisionEnter(Collision collision)
