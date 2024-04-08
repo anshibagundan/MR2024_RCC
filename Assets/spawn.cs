@@ -9,12 +9,18 @@ public class Spawn : MonoBehaviour
 
     void Start()
     {
+        // objectsToRespawn配列からPrefabを取得して初期位置に生成
+        if (objectsToRespawn.Length > 0)
+        {
+            GameObject spawnedObject = Instantiate(objectsToRespawn[0], initialPosition, Quaternion.identity);
+        }
         //initialPosition = transform.position; // 初期位置を保存
     }
 
+
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("top"))
+        if (collision.gameObject.CompareTag("Sphere"))
         {
             // 衝突したオブジェクトの "Hand Grab Interactable" スクリプトを取得
             //HandGrabInteractable handGrabInteractable = collision.gameObject.GetComponent<>();
