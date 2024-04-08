@@ -14,8 +14,17 @@ public class Spawn : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("top")) // 平面との接触をチェック
+        if (collision.gameObject.CompareTag("top"))
         {
+            // 衝突したオブジェクトの "Hand Grab Interactable" スクリプトを取得
+            //HandGrabInteractable handGrabInteractable = collision.gameObject.GetComponent<>();
+
+            // もし取得できた場合は null に設定
+            //if (handGrabInteractable != null)
+            //{
+            //    handGrabInteractable = null;
+            //}
+
             RespawnRandom(); // ランダムなオブジェクトをリスポーン
         }
     }
