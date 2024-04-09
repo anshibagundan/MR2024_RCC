@@ -20,7 +20,7 @@ public class Spawn : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("Spheres"))
+        if (collision.gameObject.CompareTag("Sphere"))
         {
 
             // 衝突時に新しいゲームオブジェクトを生成する
