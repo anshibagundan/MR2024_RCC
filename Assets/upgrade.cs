@@ -1,3 +1,4 @@
+using Oculus.Interaction.HandGrab;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -16,7 +17,12 @@ public class Upgrade : MonoBehaviour
             collision.gameObject.GetComponent<Upgrade>().upgradedObject = null;
             if (upgradedObject)
             {
-                Instantiate(upgradedObject, this.transform.position, this.transform.rotation);
+                GameObject up = Instantiate(upgradedObject, this.transform.position, this.transform.rotation);
+                HandGrabInteractable handGrabInteractableComponent = up.GetComponent<HandGrabInteractable>();
+                if (handGrabInteractableComponent != null)
+                {
+                    handGrabInteractableComponent.enabled = false; // HandGrabInteractable コンポーネントを無効化する
+                }
             }
         }
     }
