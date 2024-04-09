@@ -23,7 +23,7 @@ public class spawn_event : MonoBehaviour
             BoxCollider boxCollider = collision.gameObject.GetComponent<BoxCollider>();
             if (boxCollider != null)
             {
-                StartCoroutine(TurnOffTriggerAfterDelay(boxCollider, 0.25f));
+                StartCoroutine(TurnOffTriggerAfterDelay(boxCollider, 0.20f));
             }
 
             // 衝突中であることを記録し、現在の時刻を保存する
@@ -53,7 +53,8 @@ public class spawn_event : MonoBehaviour
             Rigidbody sphereRigidbody = GameObject.FindGameObjectWithTag("Sphere").GetComponent<Rigidbody>();
             if (sphereRigidbody != null)
             {
-                sphereRigidbody.useGravity = !sphereRigidbody.useGravity;
+                // 現在の速度にマイナスをかけることで重力を反転させます
+                sphereRigidbody.velocity *= -1f;
             }
             BoxCollider boxCollider = GameObject.FindGameObjectWithTag("top").GetComponent<BoxCollider>();
             if(boxCollider != null)
