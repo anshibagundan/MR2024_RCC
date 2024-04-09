@@ -76,19 +76,19 @@ PrefabInstance:
       addedObject: {fileID: 1945156020336243065}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fa3a2a639aa611946bc4dea62fa18f88, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2500476354657457104}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fa3a2a639aa611946bc4dea62fa18f88, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 8549823920794711386}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fa3a2a639aa611946bc4dea62fa18f88, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2512686743367404895}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fa3a2a639aa611946bc4dea62fa18f88, type: 3}
-      insertIndex: -1
       addedObject: {fileID: 885535626118121667}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fa3a2a639aa611946bc4dea62fa18f88, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1903253185141953815}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fa3a2a639aa611946bc4dea62fa18f88, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5593030501210477572}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fa3a2a639aa611946bc4dea62fa18f88, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8544446086704275506}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: fa3a2a639aa611946bc4dea62fa18f88, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -3495282617591192520}
   m_SourcePrefab: {fileID: 100100000, guid: fa3a2a639aa611946bc4dea62fa18f88, type: 3}
 --- !u!1 &743392834160771645 stripped
 GameObject:
@@ -143,81 +143,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2500476354657457104
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 743392834160771645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _transferOnSecondSelection: 0
-  _addNewPointsToFront: 0
-  _forwardElement: {fileID: 0}
-  _oneGrabTransformer: {fileID: 0}
-  _twoGrabTransformer: {fileID: 0}
-  _targetTransform: {fileID: 0}
-  _maxGrabPoints: -1
---- !u!114 &8549823920794711386
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 743392834160771645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1bedaac29a943f844a7074b53c8bdf9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _pointable: {fileID: 0}
-  _rigidbody: {fileID: 0}
-  _scaleMassWithSize: 1
---- !u!114 &2512686743367404895
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 743392834160771645}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _interactorFilters: []
-  _maxInteractors: -1
-  _maxSelectingInteractors: -1
-  _data: {fileID: 0}
-  _pointableElement: {fileID: 0}
-  _rigidbody: {fileID: 0}
-  _physicsGrabbable: {fileID: 0}
-  _resetGrabOnGrabsUpdated: 1
-  _scoringModifier:
-    _positionRotationWeight: 0.8
-  _slippiness: 0
-  _supportedGrabTypes: 3
-  _pinchGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 1
-    _middleRequirement: 1
-    _ringRequirement: 0
-    _pinkyRequirement: 0
-    _unselectMode: 0
-  _palmGrabRules:
-    _thumbRequirement: 1
-    _indexRequirement: 2
-    _middleRequirement: 2
-    _ringRequirement: 2
-    _pinkyRequirement: 1
-    _unselectMode: 0
-  _movementProvider: {fileID: 0}
-  _handAligment: 1
-  _handGrabPoses: []
 --- !u!114 &885535626118121667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,3 +168,78 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bea6e6f6e2dbe0d4ab210bad36fe0cae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &5593030501210477572
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743392834160771645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bedaac29a943f844a7074b53c8bdf9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _pointable: {fileID: -8544446086704275506}
+  _rigidbody: {fileID: 1140171711813414913}
+  _scaleMassWithSize: 1
+--- !u!114 &-8544446086704275506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743392834160771645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43f86b14a27b52f4f9298c33015b5c26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transferOnSecondSelection: 0
+  _addNewPointsToFront: 0
+  _forwardElement: {fileID: 0}
+  _oneGrabTransformer: {fileID: 0}
+  _twoGrabTransformer: {fileID: 0}
+  _targetTransform: {fileID: 0}
+  _maxGrabPoints: -1
+--- !u!114 &-3495282617591192520
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 743392834160771645}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9a7676b01585ce43908639a27765dfc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _interactorFilters: []
+  _maxInteractors: -1
+  _maxSelectingInteractors: -1
+  _data: {fileID: 0}
+  _pointableElement: {fileID: -8544446086704275506}
+  _rigidbody: {fileID: 1140171711813414913}
+  _physicsGrabbable: {fileID: 5593030501210477572}
+  _resetGrabOnGrabsUpdated: 1
+  _scoringModifier:
+    _positionRotationWeight: 0.8
+  _slippiness: 0
+  _supportedGrabTypes: 3
+  _pinchGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 1
+    _middleRequirement: 1
+    _ringRequirement: 0
+    _pinkyRequirement: 0
+    _unselectMode: 0
+  _palmGrabRules:
+    _thumbRequirement: 1
+    _indexRequirement: 2
+    _middleRequirement: 2
+    _ringRequirement: 2
+    _pinkyRequirement: 1
+    _unselectMode: 0
+  _movementProvider: {fileID: 0}
+  _handAligment: 1
+  _handGrabPoses: []

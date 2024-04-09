@@ -176,8 +176,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bedaac29a943f844a7074b53c8bdf9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _pointable: {fileID: 0}
-  _rigidbody: {fileID: 0}
+  _pointable: {fileID: 3462905048575513440}
+  _rigidbody: {fileID: 5554695014550653371}
   _scaleMassWithSize: 1
 --- !u!114 &1007417340523956599
 MonoBehaviour:
@@ -195,9 +195,9 @@ MonoBehaviour:
   _maxInteractors: -1
   _maxSelectingInteractors: -1
   _data: {fileID: 0}
-  _pointableElement: {fileID: 0}
-  _rigidbody: {fileID: 0}
-  _physicsGrabbable: {fileID: 0}
+  _pointableElement: {fileID: 3462905048575513440}
+  _rigidbody: {fileID: 5554695014550653371}
+  _physicsGrabbable: {fileID: 5478280591707100302}
   _resetGrabOnGrabsUpdated: 1
   _scoringModifier:
     _positionRotationWeight: 0.8
