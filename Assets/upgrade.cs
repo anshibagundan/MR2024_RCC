@@ -1,34 +1,29 @@
+using Oculus.Interaction.HandGrab;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class upgrade : MonoBehaviour
+public class Upgrade : MonoBehaviour
 {
-    public GameObject up;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    // アップグレード後のオブジェクト
+    public GameObject upgradedObject;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    // OnCollisionEnterは、オブジェクトが他のオブジェクトと衝突したときに呼び出されます
     private void OnCollisionEnter(Collision collision)
     {
         if (this.gameObject.name == collision.gameObject.name)
         {
             Destroy(this.gameObject);
-
-            collision.gameObject.GetComponent<upgrade>().up = null;
-            if (up)
+            collision.gameObject.GetComponent<Upgrade>().upgradedObject = null;
+            if (upgradedObject)
             {
-                Instantiate(up, this.transform.position, this.transform.rotation);
+                GameObject up = Instantiate(upgradedObject, this.transform.position, this.transform.rotation);
+                HandGrabInteractable handGrabInteractableComponent = up.GetComponent<HandGrabInteractable>();
+                if (handGrabInteractableComponent != null)
+                {
+                    handGrabInteractableComponent.enabled = false; // HandGrabInteractable コンポーネントを無効化する
+                }
             }
         }
     }
-
 }
