@@ -18,6 +18,7 @@ GameObject:
   - component: {fileID: 6133189950927573189}
   - component: {fileID: -7480482012120708146}
   - component: {fileID: -3903443518243846952}
+  - component: {fileID: 657997597576512154}
   m_Layer: 0
   m_Name: Sphere_red
   m_TagString: Sphere
@@ -238,3 +239,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bea6e6f6e2dbe0d4ab210bad36fe0cae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &657997597576512154
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2083612167240573303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe269fb86bee3446287295076d7b1801, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  circle1: {fileID: 0}
+  circle2: {fileID: 0}
+  circle3: {fileID: 0}
+  circle1_g: {fileID: 0}
+  circle2_g: {fileID: 0}
+  circle3_g: {fileID: 0}
