@@ -7,7 +7,7 @@
 
 ## 開発者
 **あんしば軍団**
-- tarakkoko
+- tarakokko
 - zono
 - bearl
 - rask
@@ -50,6 +50,7 @@ link
 
 ## 使用技術
 **開発環境:** Unity
+**プラグイン** Meta XR All-In-One package
 
 - 素材制作: Blender
 - 機能: C＃
