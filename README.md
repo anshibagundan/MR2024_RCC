@@ -51,7 +51,7 @@ link
 ## 使用技術
 **開発環境:** Unity
 
-**プラグイン** Meta XR All-In-One SDK
+**プラグイン:** Meta XR All-In-One SDK
 
 - 素材制作: Blender
 - 機能: C＃
